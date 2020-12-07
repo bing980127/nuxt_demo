@@ -1,5 +1,4 @@
 import { loginRequest, registerRequest } from "../static/api";
-const cookieparser = process.server ? require('cookieparser') : undefined;
 const Cookie = process.client ? require('js-cookie') : undefined;
 const state = () => {
     return {
@@ -9,18 +8,6 @@ const state = () => {
 }
 
 const actions = {
-    nuxtServerInit({ commit }, { req }) {
-        let userInfo = null
-        if (req.headers.cookie) {
-            const parsed = cookieparser.parse(req.headers.cookie)
-            try {
-                userInfo = parsed.userInfo
-                commit('setUser', JSON.parse(userInfo))
-            } catch (err) {
-                // No valid cookie found
-            }
-        }
-    },
     Login({ commit }, params) {
         return new Promise(resolve => {
             loginRequest({ user: params }).then((res) => {
