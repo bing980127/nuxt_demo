@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/operate", {data:[],fetch:[],mutations:[]});

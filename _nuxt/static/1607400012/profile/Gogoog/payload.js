@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/profile/Gogoog", {data:[],fetch:[],mutations:[]});
