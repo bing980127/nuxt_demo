@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/profile/asm32", {data:[],fetch:[],mutations:[]});

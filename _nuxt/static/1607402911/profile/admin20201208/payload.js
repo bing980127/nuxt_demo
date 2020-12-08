@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/profile/admin20201208", {data:[],fetch:[],mutations:[]});
